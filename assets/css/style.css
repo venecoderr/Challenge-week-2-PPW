@@ -1,0 +1,258 @@
+:root{
+    --black: rgb(54, 54, 54);
+    --red: #DC4450;
+    --butter: #DFA68B;
+    --wine: #CB5466;
+    --cheese: #FEEC62;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--red);
+    height: auto;
+    width: 100vw;
+    align-items: center;
+}
+
+header h1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--cheese);
+    background-color: var(--butter);
+    width: 30%;
+    font-size: 4em;
+    text-align: right;
+    border: solid var(--red) 25px;
+    min-width: min-content;
+}
+
+header h1 img{
+    border: solid black 2px;
+    margin: 5%;
+    width: 25%;
+    height: 25%;
+}
+
+header ul{
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    font-size: 2em;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+header ul li a:hover{
+    background-color: var(--butter);
+    border: solid var(--butter) 10px;
+}
+
+nav img{
+    width: 100%;
+    height: 762px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    height: auto;
+}
+
+main section{
+    display: flex;
+    margin: 20px;
+}
+
+main section h2{
+    width: 25%;
+    font-size: 3em;
+    border-right: solid var(--wine) 10px;
+}
+
+main section section section section{
+    width: 74%;
+    flex-direction: column;
+    justify-content: end;
+    font-size: 4em;
+}
+
+main section section section section a {
+    text-decoration: none;
+    color: black;
+}
+
+
+main section section section section p {
+    font-size: .62em;
+}
+
+.container{
+    flex: 1;
+    flex-wrap: wrap;
+    width: 75%;
+    justify-content: space-between;
+}
+
+.card{
+    display: flex;
+    width: 20%;
+    border: solid 5px black;
+    justify-content: space-between;
+    background-color: var(--butter);
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+}
+
+#maincard{
+    width: 100%;
+}
+
+.smallcard{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--butter);
+}
+
+.smallcard a{
+    color: var(--black);
+    text-decoration: none;
+    font-size: 125%;
+}
+
+
+#aboutMe{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+#aboutMe section{
+    width: 75%;
+    display: flex;
+}
+
+#aboutMe section p{
+    text-align: justify;
+    font-size: 2em;
+}
+
+#contactMe ul{
+    display: flex;
+    width: 75%;
+    justify-content: space-evenly;
+    font-size: 2em;
+}
+
+#contactMe ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+footer{
+    display: flex;
+    height: 125px;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    background-color: var(--wine);
+    color: white;   
+}
+
+
+  
+@media screen and (max-width: 1007px) {
+    header{
+        flex-direction: column;
+    }
+
+    header ul {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        
+    }
+
+    main section{
+        flex-direction: column;
+    }
+
+    main section h2{
+        border: none;
+    }
+
+    main section h2 span{
+        background-color: var(--cheese);
+    }
+
+
+    #contactMe ul{
+        justify-content: space-between;
+    }
+
+    .container{
+        flex-direction: row;
+        width: 90%;
+    }
+
+    .card{
+        width: 35%;
+    }
+}
+
+
+@media screen and (max-width: 641px) {
+    header{
+        flex-direction: column;
+    }
+
+    header ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        
+    }
+
+    main section{
+        flex-direction: column;
+    }
+
+    main section h2{
+        border: none;
+    }
+    
+    main section h2 span{
+        background-color: var(--cheese);
+    }
+
+    #contactMe ul{
+       flex-direction: column;
+       align-items: center;
+    }
+
+    footer{
+        font-size: 1em;
+    }
+    
+}
+  
+
