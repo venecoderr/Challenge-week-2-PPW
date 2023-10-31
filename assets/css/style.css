@@ -1,3 +1,5 @@
+/*Variables*/
+
 :root{
     --black: rgb(54, 54, 54);
     --red: #DC4450;
@@ -5,6 +7,8 @@
     --wine: #CB5466;
     --cheese: #FEEC62;
 }
+
+/*General rules*/
 
 *{
     box-sizing: border-box;
@@ -15,6 +19,8 @@ body{
     font-size: 16px;
     height: 100vh;
 }
+
+/*Header rules*/
 
 header{
     display: flex;
@@ -62,10 +68,14 @@ header ul li a:hover{
     border: solid var(--butter) 10px;
 }
 
+/*Banner image rules*/
+
 nav img{
     width: 100%;
     height: 762px;
 }
+
+/*Main layout rules*/
 
 main{
     display: flex;
@@ -85,10 +95,29 @@ main section h2{
     border-right: solid var(--wine) 10px;
 }
 
+/*aboutMe section rules*/
+
+#aboutMe{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+#aboutMe section{
+    width: 75%;
+    display: flex;
+}
+
+#aboutMe section p{
+    text-align: justify;
+    font-size: 2em;
+}
+
+/*previousWork section rules*/ 
+
 main section section section section{
     width: 74%;
     flex-direction: column;
-    justify-content: end;
     font-size: 4em;
 }
 
@@ -138,22 +167,7 @@ main section section section section p {
     font-size: 125%;
 }
 
-
-#aboutMe{
-    display: flex;
-    flex: 1;
-    justify-content: space-between;
-}
-
-#aboutMe section{
-    width: 75%;
-    display: flex;
-}
-
-#aboutMe section p{
-    text-align: justify;
-    font-size: 2em;
-}
+/*#contactMe section rules*/
 
 #contactMe ul{
     display: flex;
@@ -167,6 +181,8 @@ main section section section section p {
     color: black;
 }
 
+/*Footer rules*/ 
+
 footer{
     display: flex;
     height: 125px;
@@ -177,7 +193,7 @@ footer{
     color: white;   
 }
 
-
+/*Media query for medium devices*/
   
 @media screen and (max-width: 1007px) {
     header{
@@ -218,6 +234,7 @@ footer{
     }
 }
 
+ /*Media query for small devices*/
 
 @media screen and (max-width: 641px) {
     header{
